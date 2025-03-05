@@ -22,10 +22,10 @@
         }
     </style>
 
-    <!--將字體置中 大小調為90-->
+    <!--將字體置中 大小調為20-->
     <style>
         body {
-            font-size: 90px;
+            font-size: 50px;
             text-align: center;
         }
     </style>
@@ -33,63 +33,66 @@
 </head>
 
 <body>
-<!--放入true.png在標題下方-->
-<img src="true.png" alt="true" />
+<div class="container">
+    <img class="title"  alt="火車進站中 請稍後..." />
+</div>
 
-<!--載入1.png在true.png下方 -->
-<img src="1.png" alt="1" />
+<!--放入true.svg在標題下方-->
+<img src="true.svg" alt="true" />
 
-<!--一秒後換成2.png在1.png同一個位置-->
+<!--載入1.svg在true.svg下方 -->
+<img src="1.svg" alt="1" />
+
+<!--一秒後換成2.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '2.png';
+        document.querySelector('img').src = '2.svg';
     }, 1000);
 </script>
-
-<!--一秒後換成3.png在1.png同一個位置-->
+<!--一秒後換成3.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '3.png';
+        document.querySelector('img').src = '3.svg';
     }, 2000);
 </script>
 
-<!--一秒後換成4.png在1.png同一個位置-->
+<!--一秒後換成4.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '4.png';
+        document.querySelector('img').src = '4.svg';
     }, 3000);
 </script>
 
-<!--一秒後換成5.png在1.png同一個位置-->
+<!--一秒後換成5.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '5.png';
+        document.querySelector('img').src = '5.svg';
     }, 4000);
 </script>
 
-<!--一秒後換回1.png在同一個位置-->
+<!--一秒後換回1.svg在同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '1.png';
+        document.querySelector('img').src = '1.svg';
     }, 5000);
 </script>
 <!--重複上述循環-->
 <script>
     setInterval(function() {
         setTimeout(function() {
-            document.querySelector('img').src = '2.png';
+            document.querySelector('img').src = '2.svg';
         }, 1000);
         setTimeout(function() {
-            document.querySelector('img').src = '3.png';
+            document.querySelector('img').src = '3.svg';
         }, 2000);
         setTimeout(function() {
-            document.querySelector('img').src = '4.png';
+            document.querySelector('img').src = '4.svg';
         }, 3000);
         setTimeout(function() {
-            document.querySelector('img').src = '5.png';
+            document.querySelector('img').src = '5.svg';
         }, 4000);
         setTimeout(function() {
-            document.querySelector('img').src = '1.png';
+            document.querySelector('img').src = '1.svg';
         }, 5000);
     }, 5000);
 </script>
