@@ -33,15 +33,17 @@
 </head>
 
 <body>
-<div class="container">
-    <img class="title"  alt="火車進站中 請稍後..." />
+<div class="title">
+    火車進站中 請稍後...
 </div>
 
-<!--放入true.svg在標題下方-->
-<img class="title" src="img/true.png" alt="true" />
+<!--載入1.svg-->
+<div class="text">
+    <img src="img/1.svg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+</div>
 
-<!--載入1.svg在true.svg下方 -->
-<img class="title" src="img/1.svg" alt="1" />
+
+
 
 <!--一秒後換成2.svg在1.svg同一個位置-->
 <script>
@@ -96,5 +98,9 @@
         }, 5000);
     }, 5000);
 </script>
+
+
+
+
 </body>
 </html>
