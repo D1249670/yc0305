@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!--顯示標題 火車進站中 請稍後...-->
+    <title>火車進站中 請稍後...</title>
+
+    <!--將背景色設計成f5f5dc-->
+    <style>
+        body {
+            background-color: #f5f5dc;
+        }
+    </style>
+
+    <!--防止文字被選取-->
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+
+    <!--將字體置中 大小調為90-->
+    <style>
+        body {
+            font-size: 90px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+<!--放入true.png在標題下方-->
+<img src="true.png" alt="true" />
+
+<!--載入1.png在true.png下方 -->
+<img src="1.png" alt="1" />
+
+<!--一秒後換成2.png在1.png同一個位置-->
+<script>
+    setTimeout(function() {
+        document.querySelector('img').src = '2.png';
+    }, 1000);
+</script>
+
+<!--一秒後換成3.png在1.png同一個位置-->
+<script>
+    setTimeout(function() {
+        document.querySelector('img').src = '3.png';
+    }, 2000);
+</script>
+
+<!--一秒後換成4.png在1.png同一個位置-->
+<script>
+    setTimeout(function() {
+        document.querySelector('img').src = '4.png';
+    }, 3000);
+</script>
+
+<!--一秒後換成5.png在1.png同一個位置-->
+<script>
+    setTimeout(function() {
+        document.querySelector('img').src = '5.png';
+    }, 4000);
+</script>
+
+<!--一秒後換回1.png在同一個位置-->
+<script>
+    setTimeout(function() {
+        document.querySelector('img').src = '1.png';
+    }, 5000);
+</script>
+<!--重複上述循環-->
+<script>
+    setInterval(function() {
+        setTimeout(function() {
+            document.querySelector('img').src = '2.png';
+        }, 1000);
+        setTimeout(function() {
+            document.querySelector('img').src = '3.png';
+        }, 2000);
+        setTimeout(function() {
+            document.querySelector('img').src = '4.png';
+        }, 3000);
+        setTimeout(function() {
+            document.querySelector('img').src = '5.png';
+        }, 4000);
+        setTimeout(function() {
+            document.querySelector('img').src = '1.png';
+        }, 5000);
+    }, 5000);
+</script>
+</body>
+</html>
