@@ -12,6 +12,23 @@
         }
     </style>
 
+    <!--將背景圖設為true.jpg 並縮小為30% 並下移-->
+    <style>
+        body {
+            background-image: url('img/true.jpg');
+            background-size: 30%;
+            background-position: center -115%;
+        }
+    </style>
+
+
+    <!--背景圖小一點 只要顯示一張-->
+    <style>
+        body {
+            background-repeat: no-repeat;
+        }
+    </style>
+
     <!--防止文字被選取-->
     <style>
         body {
@@ -22,7 +39,7 @@
         }
     </style>
 
-    <!--將字體置中 大小調為20-->
+    <!--將字體置中 大小調為50-->
     <style>
         body {
             font-size: 50px;
@@ -33,9 +50,11 @@
 </head>
 
 <body>
+
 <div class="title">
     火車進站中 請稍後...
 </div>
+
 
 <!--載入1.svg-->
 <div class="text">
@@ -98,9 +117,6 @@
         }, 5000);
     }, 5000);
 </script>
-
-
-
 
 </body>
 </html>
