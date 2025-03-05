@@ -38,61 +38,61 @@
 </div>
 
 <!--放入true.svg在標題下方-->
-<img src="true.svg" alt="true" />
+<img class="title" src="img/true.png" alt="true" />
 
 <!--載入1.svg在true.svg下方 -->
-<img src="1.svg" alt="1" />
+<img class="title" src="img/1.svg" alt="1" />
 
 <!--一秒後換成2.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '2.svg';
+        document.querySelector('img').src = 'img/2.svg';
     }, 1000);
 </script>
 <!--一秒後換成3.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '3.svg';
+        document.querySelector('img').src = 'img/3.svg';
     }, 2000);
 </script>
 
 <!--一秒後換成4.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '4.svg';
+        document.querySelector('img').src = 'img/4.svg';
     }, 3000);
 </script>
 
 <!--一秒後換成5.svg在1.svg同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '5.svg';
+        document.querySelector('img').src = 'img/5.svg';
     }, 4000);
 </script>
 
 <!--一秒後換回1.svg在同一個位置-->
 <script>
     setTimeout(function() {
-        document.querySelector('img').src = '1.svg';
+        document.querySelector('img').src = 'img/1.svg';
     }, 5000);
 </script>
 <!--重複上述循環-->
 <script>
     setInterval(function() {
         setTimeout(function() {
-            document.querySelector('img').src = '2.svg';
+            document.querySelector('img').src = 'img/2.svg';
         }, 1000);
         setTimeout(function() {
-            document.querySelector('img').src = '3.svg';
+            document.querySelector('img').src = 'img/3.svg';
         }, 2000);
         setTimeout(function() {
-            document.querySelector('img').src = '4.svg';
+            document.querySelector('img').src = 'img/4.svg';
         }, 3000);
         setTimeout(function() {
-            document.querySelector('img').src = '5.svg';
+            document.querySelector('img').src = 'img/5.svg';
         }, 4000);
         setTimeout(function() {
-            document.querySelector('img').src = '1.svg';
+            document.querySelector('img').src = 'img/1.svg';
         }, 5000);
     }, 5000);
 </script>
